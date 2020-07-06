@@ -5,7 +5,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: Build OpenWrt K2
 
 on: 
   release:
@@ -113,9 +113,6 @@ jobs:
         CONFIG_TARGET_ramips=y
         CONFIG_TARGET_ramips_mt7620=y
         CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218a=y
-        # CONFIG_TARGET_x86 is not set
-        # CONFIG_TARGET_x86_64 is not set
-        # CONFIG_TARGET_x86_64_Generic is not set
         EOF
         # 固件压缩:
         # cat >> .config <<EOF
@@ -126,10 +123,10 @@ jobs:
         # CONFIG_EFI_IMAGES=y
         # EOF
         # IPv6支持:
-        # cat >> .config <<EOF
-        # CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
-        # CONFIG_PACKAGE_ipv6helper=y
-        # EOF
+        cat >> .config <<EOF
+        CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+        CONFIG_PACKAGE_ipv6helper=y
+        EOF
         # 多文件系统支持:
         # cat >> .config <<EOF
         # CONFIG_PACKAGE_kmod-fs-nfs=y
