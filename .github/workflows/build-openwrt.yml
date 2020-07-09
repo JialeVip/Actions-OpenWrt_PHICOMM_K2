@@ -112,7 +112,7 @@ jobs:
         cat >> .config <<EOF
         CONFIG_TARGET_ramips=y
         CONFIG_TARGET_ramips_mt7620=y
-        CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218a=y
+        CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218b=y
         EOF
         # 固件压缩:
         # cat >> .config <<EOF
@@ -188,7 +188,7 @@ jobs:
         # CONFIG_PACKAGE_luci-app-filebrowser is not set
         # CONFIG_PACKAGE_luci-app-filetransfer is not set
         CONFIG_PACKAGE_luci-app-firewall=y
-        CONFIG_PACKAGE_luci-app-flowoffload=y
+        # CONFIG_PACKAGE_luci-app-flowoffload is not set
         # CONFIG_PACKAGE_luci-app-freifunk-diagnostics is not set
         # CONFIG_PACKAGE_luci-app-freifunk-policyrouting is not set
         # CONFIG_PACKAGE_luci-app-freifunk-widgets is not set
@@ -261,7 +261,7 @@ jobs:
         # CONFIG_PACKAGE_luci-app-shairplay is not set
         # CONFIG_PACKAGE_luci-app-siitwizard is not set
         # CONFIG_PACKAGE_luci-app-simple-adblock is not set
-        CONFIG_PACKAGE_luci-app-smartdns=y
+        # CONFIG_PACKAGE_luci-app-smartdns is not set
         # CONFIG_PACKAGE_luci-app-softethervpn is not set
         # CONFIG_PACKAGE_luci-app-splash is not set
         # CONFIG_PACKAGE_luci-app-sqm is not set
@@ -277,7 +277,7 @@ jobs:
         # CONFIG_PACKAGE_luci-app-ssr-python-pro-server is not set
         # CONFIG_PACKAGE_luci-app-ssrserver-python is not set
         # CONFIG_PACKAGE_luci-app-statistics is not set
-        CONFIG_PACKAGE_luci-app-syncdial=y
+        # CONFIG_PACKAGE_luci-app-syncdial is not set
         # CONFIG_PACKAGE_luci-app-syncthing is not set
         # CONFIG_PACKAGE_luci-app-tinyproxy is not set
         # CONFIG_PACKAGE_luci-app-transmission is not set
@@ -288,7 +288,7 @@ jobs:
         # CONFIG_PACKAGE_luci-app-uhttpd is not set
         # CONFIG_PACKAGE_luci-app-unblockmusic is not set
         # CONFIG_PACKAGE_luci-app-unbound is not set
-        CONFIG_PACKAGE_luci-app-upnp=y
+        # CONFIG_PACKAGE_luci-app-upnp is not set
         # CONFIG_PACKAGE_luci-app-usb-printer is not set
         # CONFIG_PACKAGE_luci-app-v2ray-server is not set
         # CONFIG_PACKAGE_luci-app-verysync is not set
@@ -306,10 +306,10 @@ jobs:
         # CONFIG_PACKAGE_luci-app-zerotier is not set
         EOF
         # LuCI主题:
-        # cat >> .config <<EOF
-        # CONFIG_PACKAGE_luci-theme-argon=y
+        cat >> .config <<EOF
+        CONFIG_PACKAGE_luci-theme-argon=y
         # CONFIG_PACKAGE_luci-theme-netgear=y
-        # EOF
+        EOF
         # 常用软件包:
         # cat >> .config <<EOF
         # CONFIG_PACKAGE_curl=y
