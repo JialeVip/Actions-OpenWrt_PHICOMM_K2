@@ -110,9 +110,9 @@ jobs:
         # 
         # 编译phicomm k2固件:
         cat >> .config <<EOF
-        CONFIG_TARGET_ar71xx=y
-        CONFIG_TARGET_ar71xx_generic=y
-        CONFIG_TARGET_ar71xx_generic_DEVICE_BXU2000N2=y
+        CONFIG_TARGET_ramips=y
+        CONFIG_TARGET_ramips_mt7620=y
+        CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218a=y
         EOF
         # 固件压缩:
         # cat >> .config <<EOF
