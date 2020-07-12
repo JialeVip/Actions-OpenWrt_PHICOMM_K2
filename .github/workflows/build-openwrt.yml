@@ -110,9 +110,9 @@ jobs:
         # 
         # 编译phicomm k2固件:
         cat >> .config <<EOF
-        CONFIG_TARGET_ramips=y
-        CONFIG_TARGET_ramips_mt7620=y
-        CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_psg1218a=y
+        CONFIG_TARGET_ar71xx=y
+        CONFIG_TARGET_ar71xx_generic=y
+        CONFIG_TARGET_ar71xx_generic_DEVICE_BXU2000N2=y
         EOF
         # 固件压缩:
         # cat >> .config <<EOF
@@ -158,7 +158,7 @@ jobs:
         CONFIG_PACKAGE_luci-app-arpbind=y
         # CONFIG_PACKAGE_luci-app-asterisk is not set
         # CONFIG_PACKAGE_luci-app-attendedsysupgrade is not set
-        CONFIG_PACKAGE_luci-app-autoreboot=y
+        # CONFIG_PACKAGE_luci-app-autoreboot is not set
         # CONFIG_PACKAGE_luci-app-baidupcs-web is not set
         # CONFIG_PACKAGE_luci-app-bcp38 is not set
         # CONFIG_PACKAGE_luci-app-bird1-ipv4 is not set
